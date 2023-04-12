@@ -1,0 +1,5 @@
+{
+  "TXT_INPUT_SEARCH": "//input[@name='q']",
+  "BTN_SEARCH": "//div[@class='lJ9FBc']//input[@name='btnK']",
+  "LBL_MESSAGE_RESULT": "//div[@id='result-stats']"
+}

@@ -2,7 +2,6 @@ package testobject;
 
 import org.openqa.selenium.By;
 
-import testobject.TestObject;
 import utils.helpers.WebCommonHelper;
 
 public class TestObject {
