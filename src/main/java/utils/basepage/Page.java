@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import com.jayway.jsonpath.JsonPath;
 
 import utils.log.LogHelper;
-import testobject.TestObject;
+import utils.testobject.TestObject;
 import utils.helpers.FileHelper;
 //import utils.helpers.WebCommonHelper;
 import utils.keywords.WebKeywords;
@@ -86,7 +86,7 @@ public class Page {
 		final StackTraceElement[] elements = new Throwable().getStackTrace();
 		int i = 0;
 		for (final StackTraceElement element : elements) {
-			if (isValidlMethod(element)) {
+			if (isValidlyMethod(element)) {
 				if (i == index) {
 					return Class.forName(element.getClassName());
 				}
@@ -96,7 +96,7 @@ public class Page {
 		throw new IndexOutOfBoundsException(Integer.toString(index));
 	}
 
-	private static boolean isValidlMethod(final StackTraceElement element) {
+	private static boolean isValidlyMethod(final StackTraceElement element) {
 		if (element.isNativeMethod()) {
 			return false;
 		}

@@ -4,7 +4,7 @@ import basepage.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import testobject.TestObject;
+import utils.testobject.TestObject;
 import utils.keywords.WebKeywords;
 
 import java.util.Objects;
