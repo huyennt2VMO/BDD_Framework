@@ -1,7 +1,8 @@
 {
-	"TXT_USER_NAME" : "xpath://input[@id='loginform-username']",
-	"LBL_MES_USERNAME" : "xpath://div[@class='form-group has-feedback field-loginform-username required has-error']//p",
-	"TXT_PASSWORD" : "xpath://input[@id='loginform-password']",
-	"LBL_MES_PASSWORD" : "xpath://div[@class='form-group has-feedback field-loginform-password required has-error']//p",
-	"BTN_SIGNIN" : "xpath://button[@class='btn btn-warning pull-right']"
+	"TXT_USER_NAME" : "xpath://input[@id='user-name']",
+	"LBL_MES_USERNAME" : "xpath://h3[normalize-space()='Epic sadface: Password is required']",
+	"TXT_PASSWORD" : "xpath://input[@id='password']",
+	"LBL_MES_PASSWORD" : "xpath://h3[normalize-space()='Epic sadface: Password is required']",
+	"BTN_SIGNIN" : "xpath://input[@id='login-button']"
+
 }

@@ -26,7 +26,7 @@ public class TestNGListener implements ITestNGListener{
 	public TestNGListener() {
 		action = new WebKeywords();
 	}
-	
+
 	public TestNGListener(WebKeywords action) {
 		this.action = action;
 	}
@@ -43,7 +43,7 @@ public class TestNGListener implements ITestNGListener{
 
 	@BeforeTest
 	public void beforeTest() throws Throwable {
-		this.action.openBrowser("http://demo.whatacart.com/backend/index.php");
+		this.action.openBrowser("https://www.saucedemo.com/");
 		this.action.maximizeWindow();
 		logger.info("Before Test");
 	}

@@ -1,19 +1,95 @@
-INFO  | 2023-04-12 00:19:24 | [main] utils.keywords.WebKeywords (WebKeywords.java:openBrowser:38) - Running with Chrome
-DEBUG | 2023-04-12 00:19:25 | [main] wdm.cache.ResolutionCache (ResolutionCache.java:checkKeyInResolutionCache:186) - Resolution chrome=111 in cache (valid until 00:47:11 12/04/2023 ICT)
-DEBUG | 2023-04-12 00:19:25 | [main] wdm.cache.ResolutionCache (ResolutionCache.java:checkKeyInResolutionCache:186) - Resolution chrome111=111.0.5563.64 in cache (valid until 23:47:11 12/04/2023 ICT)
-INFO  | 2023-04-12 00:19:25 | [main] bonigarcia.wdm.WebDriverManager (WebDriverManager.java:resolveDriverVersion:966) - Using chromedriver 111.0.5563.64 (resolved driver for Chrome 111)
-DEBUG | 2023-04-12 00:19:25 | [main] bonigarcia.wdm.WebDriverManager (WebDriverManager.java:manage:922) - Driver chromedriver 111.0.5563.64 found in cache
-INFO  | 2023-04-12 00:19:25 | [main] bonigarcia.wdm.WebDriverManager (WebDriverManager.java:exportDriver:1021) - Exporting webdriver.chrome.driver as C:\Users\Huyen Nguyen\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe
-INFO  | 2023-04-12 00:19:28 | [main] utils.keywords.WebKeywords (WebKeywords.java:openBrowser:41) - Open 'CHROME' successfully
-INFO  | 2023-04-12 00:19:29 | [main] utils.keywords.WebKeywords (WebKeywords.java:openBrowser:45) - Navigate to 'https://www.google.com/' successfully
-INFO  | 2023-04-12 00:19:29 | [main] utils.keywords.WebKeywords (WebKeywords.java:maximizeWindow:176) - Maximized window successfully
-INFO  | 2023-04-12 00:19:29 | [main] basepage.Page (Page.java:setRepoFile:60) - Set Repo File - Get caller class 2: SearchGoogle
-INFO  | 2023-04-12 00:19:29 | [main] basepage.Page (Page.java:setRepoFile:66) - Repo file relative path: obj_repository\SearchGoogle.json
-INFO  | 2023-04-12 00:19:29 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //textarea[@name='q']' located by 'By.xpath: //textarea[@name='q']' in '30' second(s)
-INFO  | 2023-04-12 00:19:29 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:103) - Clearing web element 'null'
-INFO  | 2023-04-12 00:19:29 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:105) - Cleared web element 'null' successfully
-INFO  | 2023-04-12 00:19:30 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:108) - Set text 'Selenium' to web element 'null' successfully
-INFO  | 2023-04-12 00:19:30 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //div[@class='lJ9FBc']//input[@name='btnK']' located by 'By.xpath: //div[@class='lJ9FBc']//input[@name='btnK']' in '30' second(s)
-INFO  | 2023-04-12 00:19:30 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:85) - Clicking web element 'null'
-INFO  | 2023-04-12 00:19:32 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:87) - Clicked web element 'null' successfully
-INFO  | 2023-04-12 00:19:32 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //div[@id='result-stats']' located by 'By.xpath: //div[@id='result-stats']' in '2,000' second(s)
+INFO  | 2023-04-25 22:07:04 | [main] utils.basepage.Page (Page.java:setRepoFile:60) - Set Repo File - Get caller class 2: Login
+INFO  | 2023-04-25 22:07:04 | [main] utils.basepage.Page (Page.java:setRepoFile:66) - Repo file relative path: obj_repository\Login.json
+INFO  | 2023-04-25 22:07:04 | [main] utils.basepage.Page (Page.java:setRepoFile:60) - Set Repo File - Get caller class 2: Home
+INFO  | 2023-04-25 22:07:04 | [main] utils.basepage.Page (Page.java:setRepoFile:66) - Repo file relative path: obj_repository\Home.json
+INFO  | 2023-04-25 22:07:04 | [main] utils.basepage.Page (Page.java:setRepoFile:60) - Set Repo File - Get caller class 2: Cart
+INFO  | 2023-04-25 22:07:04 | [main] utils.basepage.Page (Page.java:setRepoFile:66) - Repo file relative path: obj_repository\Cart.json
+INFO  | 2023-04-25 22:07:05 | [main] listener.TestNGListener (TestNGListener.java:beforeSuite:36) - Before Suite
+INFO  | 2023-04-25 22:07:05 | [main] utils.keywords.WebKeywords (WebKeywords.java:openBrowser:38) - Running with Chrome
+DEBUG | 2023-04-25 22:07:05 | [main] wdm.cache.ResolutionCache (ResolutionCache.java:checkKeyInResolutionCache:186) - Resolution chrome=112 in cache (valid until 22:46:35 25/04/2023 ICT)
+DEBUG | 2023-04-25 22:07:05 | [main] wdm.cache.ResolutionCache (ResolutionCache.java:checkKeyInResolutionCache:186) - Resolution chrome112=112.0.5615.49 in cache (valid until 22:17:45 25/04/2023 ICT)
+INFO  | 2023-04-25 22:07:05 | [main] bonigarcia.wdm.WebDriverManager (WebDriverManager.java:resolveDriverVersion:966) - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+DEBUG | 2023-04-25 22:07:05 | [main] bonigarcia.wdm.WebDriverManager (WebDriverManager.java:manage:922) - Driver chromedriver 112.0.5615.49 found in cache
+INFO  | 2023-04-25 22:07:05 | [main] bonigarcia.wdm.WebDriverManager (WebDriverManager.java:exportDriver:1021) - Exporting webdriver.chrome.driver as C:\Users\Huyen Nguyen\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+INFO  | 2023-04-25 22:07:09 | [main] utils.keywords.WebKeywords (WebKeywords.java:openBrowser:41) - Open 'CHROME' successfully
+INFO  | 2023-04-25 22:07:10 | [main] utils.keywords.WebKeywords (WebKeywords.java:openBrowser:45) - Navigate to 'https://www.saucedemo.com/' successfully
+INFO  | 2023-04-25 22:07:10 | [main] utils.keywords.WebKeywords (WebKeywords.java:maximizeWindow:176) - Maximized window successfully
+INFO  | 2023-04-25 22:07:10 | [main] listener.TestNGListener (TestNGListener.java:beforeTest:48) - Before Test
+INFO  | 2023-04-25 22:07:10 | [main] listener.TestNGListener (TestNGListener.java:beforeClass:59) - Before Class
+INFO  | 2023-04-25 22:07:10 | [main] listener.TestNGListener (TestNGListener.java:beforeMethod:70) - Before Method
+DEBUG | 2023-04-25 22:07:11 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_USER_NAME']
+DEBUG | 2023-04-25 22:07:11 | [main] utils.basepage.Page (Page.java:findTestObject:138) - TXT_USER_NAME:xpath://input[@id='user-name']
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'TXT_USER_NAME' located by 'By.xpath: //input[@id='user-name']' in '30' second(s)
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:103) - Clearing web element 'null'
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:105) - Cleared web element 'null' successfully
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:108) - Set text 'standard_user' to web element 'null' successfully
+DEBUG | 2023-04-25 22:07:11 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PASSWORD']
+DEBUG | 2023-04-25 22:07:11 | [main] utils.basepage.Page (Page.java:findTestObject:138) - TXT_PASSWORD:xpath://input[@id='password']
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'TXT_PASSWORD' located by 'By.xpath: //input[@id='password']' in '30' second(s)
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:103) - Clearing web element 'null'
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:105) - Cleared web element 'null' successfully
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:108) - Set text 'secret_sauce' to web element 'null' successfully
+DEBUG | 2023-04-25 22:07:11 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_SIGNIN']
+DEBUG | 2023-04-25 22:07:11 | [main] utils.basepage.Page (Page.java:findTestObject:138) - BTN_SIGNIN:xpath://input[@id='login-button']
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'BTN_SIGNIN' located by 'By.xpath: //input[@id='login-button']' in '30' second(s)
+INFO  | 2023-04-25 22:07:11 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:85) - Clicking web element 'null'
+INFO  | 2023-04-25 22:07:12 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:87) - Clicked web element 'null' successfully
+INFO  | 2023-04-25 22:07:12 | [main] listener.TestNGListener (TestNGListener.java:afterMethod:77) - After Method
+INFO  | 2023-04-25 22:07:12 | [main] listener.TestNGListener (TestNGListener.java:afterClass:65) - After Class
+DEBUG | 2023-04-25 22:07:12 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_TITLE']
+DEBUG | 2023-04-25 22:07:12 | [main] utils.basepage.Page (Page.java:findTestObject:138) - LBL_TITLE:xpath://div[@class='app_logo']
+INFO  | 2023-04-25 22:07:12 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'LBL_TITLE' located by 'By.xpath: //div[@class='app_logo']' in '30' second(s)
+INFO  | 2023-04-25 22:07:12 | [main] utils.keywords.WebKeywords (WebKeywords.java:verifyElementText:154) - Actual text 'Swag Labs' and Expected text 'Swag Labs' of web element 'null' are the same
+DEBUG | 2023-04-25 22:07:12 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_ADD_ITEM']
+DEBUG | 2023-04-25 22:07:12 | [main] utils.basepage.Page (Page.java:findTestObject:138) - BTN_ADD_ITEM:(//div[@class='inventory_item'])//button
+INFO  | 2023-04-25 22:07:12 | [main] utils.page.Home (Home.java:addToProductToCart:77) - test object TestObject{objectName='BTN_ADD_ITEM', locatorValue='(//div[@class='inventory_item'])//button'}
+INFO  | 2023-04-25 22:07:12 | [main] utils.page.Home (Home.java:addToProductToCart:86) - webElement of (//div[@class='inventory_item'])//button = [[[ChromeDriver: chrome on WINDOWS (478173e38af7345ec6576f30637d4b39)] -> xpath: (//div[@class='inventory_item'])//button], [[ChromeDriver: chrome on WINDOWS (478173e38af7345ec6576f30637d4b39)] -> xpath: (//div[@class='inventory_item'])//button], [[ChromeDriver: chrome on WINDOWS (478173e38af7345ec6576f30637d4b39)] -> xpath: (//div[@class='inventory_item'])//button], [[ChromeDriver: chrome on WINDOWS (478173e38af7345ec6576f30637d4b39)] -> xpath: (//div[@class='inventory_item'])//button], [[ChromeDriver: chrome on WINDOWS (478173e38af7345ec6576f30637d4b39)] -> xpath: (//div[@class='inventory_item'])//button], [[ChromeDriver: chrome on WINDOWS (478173e38af7345ec6576f30637d4b39)] -> xpath: (//div[@class='inventory_item'])//button]]
+INFO  | 2023-04-25 22:07:12 | [main] utils.page.Home (Home.java:addToProductToCart:96) - selectNumber : [3, 1]
+DEBUG | 2023-04-25 22:07:12 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_SHOPPING_CART']
+DEBUG | 2023-04-25 22:07:12 | [main] utils.basepage.Page (Page.java:findTestObject:138) - BTN_SHOPPING_CART:xpath://a[@class='shopping_cart_link']
+INFO  | 2023-04-25 22:07:12 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'BTN_SHOPPING_CART' located by 'By.xpath: //a[@class='shopping_cart_link']' in '30' second(s)
+INFO  | 2023-04-25 22:07:12 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:85) - Clicking web element 'null'
+INFO  | 2023-04-25 22:07:12 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:87) - Clicked web element 'null' successfully
+DEBUG | 2023-04-25 22:07:14 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['ITEM_IN_CART']
+DEBUG | 2023-04-25 22:07:14 | [main] utils.basepage.Page (Page.java:findTestObject:138) - ITEM_IN_CART://div[@class='cart_item']
+INFO  | 2023-04-25 22:07:14 | [main] utils.page.Cart (Cart.java:checkCart:38) - item in cart 2
+DEBUG | 2023-04-25 22:07:14 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['CHECKOUT_BTN']
+DEBUG | 2023-04-25 22:07:14 | [main] utils.basepage.Page (Page.java:findTestObject:138) - CHECKOUT_BTN://button[@class='btn btn_action btn_medium checkout_button']
+INFO  | 2023-04-25 22:07:14 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //button[@class='btn btn_action btn_medium checkout_button']' located by 'By.xpath: //button[@class='btn btn_action btn_medium checkout_button']' in '30' second(s)
+DEBUG | 2023-04-25 22:07:14 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['FIRST_NAME']
+DEBUG | 2023-04-25 22:07:14 | [main] utils.basepage.Page (Page.java:findTestObject:138) - FIRST_NAME://input[@placeholder='First Name']
+INFO  | 2023-04-25 22:07:14 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //input[@placeholder='First Name']' located by 'By.xpath: //input[@placeholder='First Name']' in '30' second(s)
+INFO  | 2023-04-25 22:07:14 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:103) - Clearing web element 'null'
+INFO  | 2023-04-25 22:07:14 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:105) - Cleared web element 'null' successfully
+INFO  | 2023-04-25 22:07:14 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:108) - Set text 'huyen' to web element 'null' successfully
+DEBUG | 2023-04-25 22:07:14 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LAST_NAME']
+DEBUG | 2023-04-25 22:07:14 | [main] utils.basepage.Page (Page.java:findTestObject:138) - LAST_NAME://input[@placeholder='Last Name']
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //input[@placeholder='Last Name']' located by 'By.xpath: //input[@placeholder='Last Name']' in '30' second(s)
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:103) - Clearing web element 'null'
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:105) - Cleared web element 'null' successfully
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:108) - Set text 'nguyen' to web element 'null' successfully
+DEBUG | 2023-04-25 22:07:15 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['ZIP_CODE']
+DEBUG | 2023-04-25 22:07:15 | [main] utils.basepage.Page (Page.java:findTestObject:138) - ZIP_CODE://input[@placeholder='Zip/Postal Code']
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //input[@placeholder='Zip/Postal Code']' located by 'By.xpath: //input[@placeholder='Zip/Postal Code']' in '30' second(s)
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:103) - Clearing web element 'null'
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:105) - Cleared web element 'null' successfully
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:setText:108) - Set text '10000' to web element 'null' successfully
+DEBUG | 2023-04-25 22:07:15 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['CHECKOUT_CONTINUE']
+DEBUG | 2023-04-25 22:07:15 | [main] utils.basepage.Page (Page.java:findTestObject:138) - CHECKOUT_CONTINUE://input[@value='Continue']
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //input[@value='Continue']' located by 'By.xpath: //input[@value='Continue']' in '30' second(s)
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:85) - Clicking web element 'null'
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:87) - Clicked web element 'null' successfully
+DEBUG | 2023-04-25 22:07:15 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['FINISH_BTN']
+DEBUG | 2023-04-25 22:07:15 | [main] utils.basepage.Page (Page.java:findTestObject:138) - FINISH_BTN://button[@class='btn btn_action btn_medium cart_button']
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //button[@class='btn btn_action btn_medium cart_button']' located by 'By.xpath: //button[@class='btn btn_action btn_medium cart_button']' in '2,000' second(s)
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:85) - Clicking web element 'null'
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:87) - Clicked web element 'null' successfully
+DEBUG | 2023-04-25 22:07:15 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BACK_BTN']
+DEBUG | 2023-04-25 22:07:15 | [main] utils.basepage.Page (Page.java:findTestObject:138) - BACK_BTN://button[@class='btn btn_primary btn_small']
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:getElement:68) - Found 1 web elements with id: 'By.xpath: //button[@class='btn btn_primary btn_small']' located by 'By.xpath: //button[@class='btn btn_primary btn_small']' in '2,000' second(s)
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:85) - Clicking web element 'null'
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:click:87) - Clicked web element 'null' successfully
+INFO  | 2023-04-25 22:07:15 | [main] utils.keywords.WebKeywords (WebKeywords.java:closeBrowser:121) - Closing browser
+INFO  | 2023-04-25 22:07:16 | [main] utils.keywords.WebKeywords (WebKeywords.java:closeBrowser:124) - Close browser successfully
+INFO  | 2023-04-25 22:07:16 | [main] listener.TestNGListener (TestNGListener.java:afterTest:54) - After Test
+INFO  | 2023-04-25 22:07:16 | [main] listener.TestNGListener (TestNGListener.java:afterSuite:41) - After Suite

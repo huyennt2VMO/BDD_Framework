@@ -14,16 +14,16 @@ import org.openqa.selenium.support.ui.Wait;
 import org.slf4j.Logger;
 
 import utils.log.LogHelper;
-import testobject.TestObject;
 import utils.configs.ConfigSettings;
 import utils.drivers.DriverManagerFactoryT;
 import utils.drivers.DriverManagerT;
 import utils.helpers.WebCommonHelper;
 import utils.drivers.DriverManagerFactoryT.DriverType;
+import utils.testobject.TestObject;
 
 public class WebKeywords {
 	private static Logger logger = LogHelper.getLogger();
-	private static DriverManagerT driverManagerT;
+	public static DriverManagerT driverManagerT;
 	private ConfigSettings config;
 	private static String browser;
 	private static int defaultTimeout;
@@ -149,16 +149,16 @@ public class WebKeywords {
 		try {
 			WebElement we = getElement(locator, timeout);
 			if (we != null) {
-				String actuatText = we.getText().trim();
-				if (actuatText.equals(expectedText)) {
+				String actualtText = we.getText().trim();
+				if (actualtText.equals(expectedText)) {
 					logger.info(MessageFormat.format(
 							"Actual text ''{0}'' and Expected text ''{1}'' of web element ''{2}'' are the same",
-							actuatText, expectedText, weId));
+							actualtText, expectedText, weId));
 					return true;
 				} else {
 					logger.error(MessageFormat.format(
 							"Actual text ''{0}'' and Expected text ''{1}'' of web element ''{2}'' are not the same",
-							actuatText, expectedText, weId));
+							actualtText, expectedText, weId));
 				}
 			} else {
 				logger.error("Unable to find web element");

@@ -4,7 +4,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 
-import testobject.TestObject;
+import utils.testobject.TestObject;
 
 public class WebCommonHelper {
 

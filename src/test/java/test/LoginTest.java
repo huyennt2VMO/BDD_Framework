@@ -2,60 +2,115 @@ package test;
 
 import static org.testng.Assert.assertTrue;
 
-import org.testng.annotations.Test;
-
+import io.qameta.allure.Step;
 import listener.TestNGListener;
-import page.Login;
+import org.apache.commons.logging.Log;
+import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.testng.ITestNGListener;
+import org.testng.annotations.*;
+
+import utils.page.Home;
+import utils.page.Login;
 import utils.keywords.WebKeywords;
+import utils.log.LogHelper;
 
 public class LoginTest extends TestNGListener {
 
-	Login objLogin;
+    private Login objLogin;
+    private Home homePage;
+    //	public WebKeywords action;
+    public WebDriver driver;
 
-//	public WebKeywords action;
+    public WebKeywords action;
 
-	public LoginTest() {
+    private final Logger logger = LogHelper.getLogger();
 
-	}
+//    @BeforeSuite
+//    public void beforeSuite() {
+//        logger.info("Before Suite");
+//    }
+//
+//    @AfterSuite
+//    public void afterSuite() {
+//        logger.info("After Suite");
+//    }
+//
+//    @BeforeTest
+//    public void beforeTest() throws Throwable {
+//        this.action.openBrowser("https://www.saucedemo.com/");
+//        this.action.maximizeWindow();
+//        logger.info("Before Test");
+//    }
 
-	public LoginTest(WebKeywords action) {
-		super(action);
-	}
 
-	@Test(description = "ER01_Username cannot be empty")
-	public void ER01_UsernameCannotBeEmpty() {
-		objLogin = new Login(action);
-		objLogin.inputUsername("");
-		objLogin.pressTab();
-		assertTrue(objLogin.shouldBeUserNameMessageErrorAs("Username cannot be blank."));
-	}
+//    @AfterMethod
+//    public void afterMethod() {
+//
+//        logger.info("After Method");
+//    }
+//
+//    public LoginTest() {
+//        this.objLogin = new Login(this.action);
+//        this.homePage = new Home(this.action);
+//    }
 
-	@Test(description = "ER02_Username cannot be empty 2")
-	public void ER02_UsernameCannotBeEmpty2() throws Throwable {
-		objLogin.inputUsername(" ");
-		objLogin.pressTab();
-		assertTrue(objLogin.shouldBeUserNameMessageErrorAs("Username cannot be blank."));
-	}
+    public LoginTest(WebKeywords action) {
+        this.action = action;
+    }
 
-	@Test(description = "ER03_Password cannot be empty")
-	public void ER03_PasswordCannotBeEmpty() {
-		objLogin.inputPassword("");
-		objLogin.pressTab();
-		assertTrue(objLogin.shouldBePasswordMessageErrorAs("Password cannot be blank."));
-	}
+    public LoginTest() {
+        this.action = new WebKeywords();
+        this.objLogin = new Login(this.action);
+    }
 
-	@Test(description = "ER04_Password cannot be empty2")
-	public void ER04_PasswordCannotBeEmpty2() {
-		objLogin.inputPassword(" ");
-		objLogin.pressTab();
-		assertTrue(objLogin.shouldBePasswordMessageErrorAs("Password cannot be blank."));
-	}
+    @Step("SC_Login successfully")
+    @Test(priority = 1, description = "SC_Login successfully")
+    public void SC_LoginSuccessfully() throws Throwable {
+        objLogin.inputUsername("standard_user");
+        objLogin.inputPassword("secret_sauce");
+        objLogin.clickButtonSignUp();
+    }
 
-	@Test(description = "SC_Login successfully")
-	public void SC_LoginSuccessfully() throws Throwable {
-		objLogin.inputUsername("super");
-		objLogin.inputPassword("admin");
-		objLogin.clickButtonSignUp();
-	}
-
+//    @Step("check title")
+//    public void SC_checkTitle() {
+//        assertTrue(this.homePage.checkTitle("Swag Labs"));
+//    }
+//
+//    @Step("SC_ADD_TO_CARD")
+//    public void addProductToCard() {
+//        assertTrue(this.homePage.addToProductToCart());
+////        this.homePage.addToCartV2();
+//    }
+//
+//    @Step("TO_CART")
+//    public void toCart() throws InterruptedException {
+//        this.homePage.navigateToCart();
+//    }
+//
+//        @Step( "check item in cart")
+//    public void checkItemInCart() throws InterruptedException {
+//
+//        this.homePage.checkCart();
+//    }
+//    @Step("checkout")
+//    public void toCheckout() {
+//        this.homePage.checkout();
+//    }
+//    @Step("Input info")
+//    public void InputInfor() {
+//        this.homePage.inputInfo();
+//    }
+//    @Step("chekcout continue")
+//    public void checkoutContinue() {
+//        this.homePage.checkoutContinue();
+//    }
+//    @Step("chekcout finish")
+//    public void finishChekcout() {
+//        this.homePage.finish();
+//    }
+//    @Step("back to list")
+//    public void backToList() {
+//        this.homePage.backTOList();
+//    }
 }

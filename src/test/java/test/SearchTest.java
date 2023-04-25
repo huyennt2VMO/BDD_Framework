@@ -1,9 +1,7 @@
 package test;
 
-import listener.TestNGListener;
 import org.testng.annotations.Test;
-import page.SearchGoogle;
-import utils.keywords.WebKeywords;
+import utils.page.SearchGoogle;
 
 public class SearchTest  {
 

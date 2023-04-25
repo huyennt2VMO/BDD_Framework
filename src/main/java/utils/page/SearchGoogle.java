@@ -1,6 +1,6 @@
-package page;
+package utils.page;
 
-import basepage.Page;
+import utils.basepage.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

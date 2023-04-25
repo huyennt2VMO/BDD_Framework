@@ -1,4 +1,4 @@
-package testobject;
+package utils.testobject;
 
 import org.openqa.selenium.By;
 
@@ -39,5 +39,12 @@ public class TestObject {
 		String[] locator = locatorValue.split(":");
 		return WebCommonHelper.getByStrategy(locator[1], locator[0], "");
 	}
-	
+
+	@Override
+	public String toString() {
+		return "TestObject{" +
+				"objectName='" + objectName + '\'' +
+				", locatorValue='" + locatorValue + '\'' +
+				'}';
+	}
 }
