@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import io.qameta.allure.Step;
 import listener.TestNGListener;
+import manager.AllureManager;
 import org.apache.commons.logging.Log;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
@@ -14,6 +15,8 @@ import utils.page.Home;
 import utils.page.Login;
 import utils.keywords.WebKeywords;
 import utils.log.LogHelper;
+
+import java.sql.DriverManager;
 
 public class LoginTest extends TestNGListener {
 
@@ -26,10 +29,11 @@ public class LoginTest extends TestNGListener {
 
     private final Logger logger = LogHelper.getLogger();
 
-//    @BeforeSuite
-//    public void beforeSuite() {
-//        logger.info("Before Suite");
-//    }
+    @BeforeSuite
+    public void beforeSuite() {
+        logger.info("Before Suite");
+        AllureManager.getInstants().setAllureEnv("https://www.saucedemo.com", "NO-ENV");
+    }
 //
 //    @AfterSuite
 //    public void afterSuite() {
@@ -64,12 +68,14 @@ public class LoginTest extends TestNGListener {
         this.objLogin = new Login(this.action);
     }
 
-    @Step("SC_Login successfully")
+    @Step("Login successfully {1}")
     @Test(priority = 1, description = "SC_Login successfully")
     public void SC_LoginSuccessfully() throws Throwable {
         objLogin.inputUsername("standard_user");
         objLogin.inputPassword("secret_sauce");
         objLogin.clickButtonSignUp();
+        AllureManager.getInstants().saveScreenshotPNG();
+        AllureManager.getInstants().saveTextLog("login is success");
     }
 
 //    @Step("check title")

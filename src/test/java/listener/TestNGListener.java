@@ -1,17 +1,11 @@
 package listener;
 
+import manager.AllureManager;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.testng.ITestNGListener;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 import utils.keywords.WebKeywords;
 import utils.log.LogHelper;
 
@@ -75,5 +69,8 @@ public class TestNGListener implements ITestNGListener{
 	public void afterMethod() {
 
 		logger.info("After Method");
+	}
+	public void onTestFailure(ITestResult resul) {
+//		AllureManager.saveTextLog(resul.getName() + " is failed.");
 	}
 }

@@ -37,22 +37,24 @@ public class CartTest {
     }
     @Step("Input info")
     @Test(priority = 7)
-    public void InputInfor() {
+    public void InputInfo() {
         this.cartPage.inputInfo();
     }
-    @Step("chekcout continue")
+    @Step("checkout continue")
     @Test(priority = 8)
     public void checkoutContinue() {
         this.cartPage.checkoutContinue();
-    }
-    @Step("chekcout finish")
-    @Test(priority = 9)
-    public void finishChekcout() {
         this.cartPage.finish();
-    }
-    @Step("back to list")
-    @Test(priority = 10)
-    public void backToList() {
         this.cartPage.backTOList();
     }
+//    @Step("chekcout finish")
+//    @Test(priority = 9)
+//    public void finishCheckout() {
+//
+//    }
+//    @Step("back to list")
+//    @Test(priority = 10)
+//    public void backToList() {
+//
+//    }
 }

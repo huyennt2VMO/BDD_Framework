@@ -5,8 +5,7 @@
     </listeners>
     <test name="FunHub Test Suite" verbose="2">
         <classes>
-            <class name="test.LoginTest">
-            </class>
+            <class name="test.LoginTest"></class>
             <class name="test.HomeTest"></class>
             <class name="test.CartTest"></class>
         </classes>

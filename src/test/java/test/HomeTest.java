@@ -1,14 +1,11 @@
 package test;
 
 import io.qameta.allure.Step;
-import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
-import org.testng.ITestNGListener;
 import org.testng.annotations.Test;
 import utils.keywords.WebKeywords;
 import utils.log.LogHelper;
 import utils.page.Home;
-import utils.page.Login;
 
 import static org.testng.Assert.assertTrue;
 
@@ -32,14 +29,15 @@ public class HomeTest  {
     @Test(priority = 3)
     public void addProductToCard() {
         assertTrue(this.homePage.addToProductToCart());
+        this.homePage.navigateToCart();
 //        this.homePage.addToCartV2();
     }
 
-    @Step("TO_CART")
-    @Test(priority = 4)
-    public void toCart() throws InterruptedException {
-        this.homePage.navigateToCart();
-    }
+//    @Step("TO_CART")
+//    @Test(priority = 4)
+//    public void toCart() throws InterruptedException {
+//        this.homePage.navigateToCart();
+//    }
 
 
 }
