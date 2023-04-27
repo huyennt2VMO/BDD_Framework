@@ -1,0 +1,9 @@
+{
+  "LBL_TITLE": "xpath://div[@class='app_logo']",
+  "BTN_SHOPPING_CART": "xpath://a[@class='shopping_cart_link']",
+  "LBL_SHOPPING_CART_BADGE": "xpath://span[@class='shopping_cart_badge']",
+  "INVENTORY_ITEM": "//div[@class='inventory_item']",
+  "BTN_ADD_ITEM": "(//div[@class='inventory_item'])//button",
+  "LABEL_NAME": "//div[@class='inventory_item_name']",
+
+}

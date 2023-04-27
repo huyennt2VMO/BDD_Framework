@@ -1,0 +1,10 @@
+{
+  "ITEM_IN_CART": "//div[@class='cart_item']",
+  "CHECKOUT_BTN": "//button[@class='btn btn_action btn_medium checkout_button']",
+  "FIRST_NAME": "//input[@placeholder='First Name']",
+  "LAST_NAME": "//input[@placeholder='Last Name']",
+  "ZIP_CODE": "//input[@placeholder='Zip/Postal Code']",
+  "CHECKOUT_CONTINUE": "//input[@value='Continue']",
+  "FINISH_BTN": "//button[@class='btn btn_action btn_medium cart_button']",
+  "BACK_BTN": "//button[@class='btn btn_primary btn_small']"
+}

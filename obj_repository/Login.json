@@ -1,0 +1,8 @@
+{
+	"TXT_USER_NAME" : "xpath://input[@id='user-name']",
+	"LBL_MES_USERNAME" : "xpath://h3[normalize-space()='Epic sadface: Password is required']",
+	"TXT_PASSWORD" : "xpath://input[@id='password']",
+	"LBL_MES_PASSWORD" : "xpath://h3[normalize-space()='Epic sadface: Password is required']",
+	"BTN_SIGNIN" : "xpath://input[@id='login-button']"
+
+}
