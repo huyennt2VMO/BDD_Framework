@@ -2,6 +2,9 @@ package test;
 
 import static org.testng.Assert.assertTrue;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.qameta.allure.Step;
 import listener.TestNGListener;
 import manager.AllureManager;
@@ -34,30 +37,6 @@ public class LoginTest extends TestNGListener {
         logger.info("Before Suite");
         AllureManager.getInstants().setAllureEnv("https://www.saucedemo.com", "NO-ENV");
     }
-//
-//    @AfterSuite
-//    public void afterSuite() {
-//        logger.info("After Suite");
-//    }
-//
-//    @BeforeTest
-//    public void beforeTest() throws Throwable {
-//        this.action.openBrowser("https://www.saucedemo.com/");
-//        this.action.maximizeWindow();
-//        logger.info("Before Test");
-//    }
-
-
-//    @AfterMethod
-//    public void afterMethod() {
-//
-//        logger.info("After Method");
-//    }
-//
-//    public LoginTest() {
-//        this.objLogin = new Login(this.action);
-//        this.homePage = new Home(this.action);
-//    }
 
     public LoginTest(WebKeywords action) {
         this.action = action;
@@ -68,55 +47,38 @@ public class LoginTest extends TestNGListener {
         this.objLogin = new Login(this.action);
     }
 
-    @Step("Login successfully {1}")
-    @Test(priority = 1, description = "SC_Login successfully")
-    public void SC_LoginSuccessfully() throws Throwable {
-        objLogin.inputUsername("standard_user");
-        objLogin.inputPassword("secret_sauce");
+//    @Step("Login successfully {1}")
+//    @Test(priority = 1, description = "SC_Login successfully")
+//    public void SC_LoginSuccessfully() throws Throwable {
+//        objLogin.inputUsername("standard_user");
+//        objLogin.inputPassword("secret_sauce");
+//        objLogin.clickButtonSignUp();
+//        AllureManager.getInstants().saveScreenshotPNG();
+//        AllureManager.getInstants().saveTextLog("login is success");
+//    }
+
+
+    @BeforeTest
+    @Given("I am on the login page")
+    @Override
+    public void beforeTest() throws Throwable {
+        this.action.openBrowser("https://www.saucedemo.com/");
+        this.action.maximizeWindow();
+        logger.info("Before Test");
+    }
+
+    @When("User logged in with email {string} and password {string}")
+    @Step("Login successfully {2}")
+    public void SC_userLogin(String userName, String password) {
+        objLogin.inputUsername(userName);
+        objLogin.inputPassword(password);
         objLogin.clickButtonSignUp();
         AllureManager.getInstants().saveScreenshotPNG();
         AllureManager.getInstants().saveTextLog("login is success");
     }
 
-//    @Step("check title")
-//    public void SC_checkTitle() {
-//        assertTrue(this.homePage.checkTitle("Swag Labs"));
-//    }
-//
-//    @Step("SC_ADD_TO_CARD")
-//    public void addProductToCard() {
-//        assertTrue(this.homePage.addToProductToCart());
-////        this.homePage.addToCartV2();
-//    }
-//
-//    @Step("TO_CART")
-//    public void toCart() throws InterruptedException {
-//        this.homePage.navigateToCart();
-//    }
-//
-//        @Step( "check item in cart")
-//    public void checkItemInCart() throws InterruptedException {
-//
-//        this.homePage.checkCart();
-//    }
-//    @Step("checkout")
-//    public void toCheckout() {
-//        this.homePage.checkout();
-//    }
-//    @Step("Input info")
-//    public void InputInfor() {
-//        this.homePage.inputInfo();
-//    }
-//    @Step("chekcout continue")
-//    public void checkoutContinue() {
-//        this.homePage.checkoutContinue();
-//    }
-//    @Step("chekcout finish")
-//    public void finishChekcout() {
-//        this.homePage.finish();
-//    }
-//    @Step("back to list")
-//    public void backToList() {
-//        this.homePage.backTOList();
-//    }
+    @Then("I should see the dashboard page")
+    public void SC_ValidUser() {
+
+    }
 }

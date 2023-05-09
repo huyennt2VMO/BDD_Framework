@@ -1,5 +1,6 @@
 package manager;
 
+import com.google.common.collect.ImmutableMap;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
@@ -10,6 +11,8 @@ import utils.drivers.DriverManagerFactoryT;
 import utils.keywords.WebKeywords;
 
 import java.util.Objects;
+
+import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 
 public class AllureManager {
     private ConfigSettings config;
@@ -31,10 +34,15 @@ public class AllureManager {
     }
 
     public void setAllureEnv(String url, String env) {
-        Allure.addAttachment("Environment", "Environment: " + env);
-        Allure.addAttachment("Environment", "Browser: " + browser);
-        Allure.addAttachment("Environment", "URL: " + url);
+//        Allure.addAttachment("Environment", "Environment: " + env);
+//        Allure.addAttachment("Environment", "Browser: " + browser);
+//        Allure.addAttachment("Environment", "URL: " + url);
 //        Allure.addAttachment("Environment", "App Version: " + EnvironmentInfo.appVersion);
+        allureEnvironmentWriter(
+                ImmutableMap.<String, String>builder().put("Browser", browser).put("Browser.Version", "70.0.3538.77")
+                        .put("URL", url).build(),
+                System.getProperty("user.dir") + "/allure-results/");
+
     }
 
     //Text attachments for Allure
